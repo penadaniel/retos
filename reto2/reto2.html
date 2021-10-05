@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Reto</title>
+        <link rel="stylesheet" href="estilo.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="funciones.js"></script>
+
+    </head>
+    <body>
+        <header>
+        <h1>DOCTOR</h1>
+        </header>
+        <div id="resultado"></div>
+        
+        <div>
+            <input type="number" id="id" placeholder="id">
+            <input type="text" id="specialty" placeholder="specialty">
+            <input type="number" id="graduate_year" placeholder="graduate_year">
+            <input type="number" id="department_id" placeholder="department_id">
+            <input type="text" id="name" placeholder="name">
+        </div>
+        
+        <div>
+        <button onclick="informacionDoctor()">Consultar</button>
+        <button onclick="guardarDoctor()">Guardar!</button>
+        <button onclick="editarDoctor()">Actualizar!</button> 
+        </div>
+
+        <header>
+        <h1>CLIENTE</h1>
+        </header>
+        <div id="resultadoCliente"></div>
+        
+        <div>
+            <input type="number" id="idCliente" placeholder="idCliente">
+            <input type="text" id="nameCliente" placeholder="nameCliente">
+            <input type="text" id="email" placeholder="email">
+            <input type="number" id="age" placeholder="age">
+        </div>
+        
+        <div>
+        <button onclick="informacionCliente()">Consultar</button>
+        <button onclick="guardarCliente()">Guardar!</button>
+        <button onclick="editarCliente()">Actualizar!</button>
+        </div>
+
+        <header>
+        <h1>MESSAGE</h1>
+        </header>
+        <div id="resultadoMensaje"></div>
+        
+        <div>
+            <input type="number" id="idMensaje" placeholder="idMensaje">
+            <input type="text" id="messagetext" placeholder="messagetext">
+        </div>
+        
+        <div>
+        <button onclick="informacionMensaje()">Consultar</button>
+        <button onclick="guardarMensaje()">Guardar!</button>
+        <button onclick="editarMensaje()">Actualizar!</button>
+        </div>
+        
+        <div>
+        <footer>
+            Daniel Peña web 2021
+        </footer>
+        </div>
+
+        <div class="clearfix"></div>
+    </body>
+
+</html>
